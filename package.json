@@ -1,0 +1,49 @@
+{
+  "name": "dsh-conversation-delete",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Delete one workspace conversation from the sidebar, including its durable session log and projection-cache row.",
+  "license": "MIT",
+  "author": "KIKIMORUA",
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "conversation",
+    "session",
+    "delete"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KIKIMORUA/dsh-conversation-delete.git"
+  },
+  "homepage": "https://github.com/KIKIMORUA/dsh-conversation-delete#readme",
+  "type": "module",
+  "main": "index.js",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
+    "README.md"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-workspace"
+      ]
+    }
+  }
+}

@@ -1,0 +1,4 @@
+# Mount the sidebar action and its Host delete route.
+- insert:
+    - id: dsh-conversation-delete
+      name: dsh-conversation-delete

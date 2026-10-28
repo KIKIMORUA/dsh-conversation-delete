@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Conversation Delete",
+    "description": "Adds a Delete chat row to every Session's sidebar menu and removes the conversation's log, cache row, and workspace membership."
+  }
+}
